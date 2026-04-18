@@ -36,7 +36,7 @@ export const metadata: Metadata = {
       "14 skills that turn your coding agent from an eager junior into a disciplined engineer. One plugin install. A Datasense workshop.",
     type: "website",
     siteName: "SuperPowers Workshop",
-    images: [{ url: "/superpowers-claude/og.svg", width: 1200, height: 630, alt: "SuperPowers - Give Claude Code a spine" }],
+    images: [{ url: "/superpowers-claude/og.png", width: 1200, height: 630, alt: "SuperPowers - Give Claude Code a spine" }],
   },
   twitter: {
     card: "summary_large_image",

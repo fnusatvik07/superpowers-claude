@@ -151,7 +151,7 @@ export function Hero() {
             <Link
               href="https://www.skool.com/the-agent-lab-3899/about"
               target="_blank"
-              className="inline-flex items-center gap-2 rounded-xl border-2 border-[var(--pop-yellow)] bg-[var(--pop-yellow)] px-6 py-3 font-display text-base font-semibold text-ink transition hover:bg-[var(--pop-yellow)]/90"
+              className="inline-flex items-center gap-2 rounded-xl border-2 border-[var(--pop-violet)] bg-[var(--pop-violet)] px-6 py-3 font-display text-base font-semibold text-paper transition hover:bg-[var(--pop-violet)]/90"
             >
               Join AI Launchpad
             </Link>

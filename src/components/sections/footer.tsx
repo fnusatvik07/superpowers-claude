@@ -50,7 +50,7 @@ export function Footer() {
             <a href="#compare" className="transition hover:text-paper">Compare</a>
             <a href="#faq" className="transition hover:text-paper">FAQ</a>
             <a href="https://github.com/obra/superpowers" target="_blank" rel="noopener" className="transition hover:text-paper">GitHub ↗</a>
-            <a href="https://discord.gg/35wsABTejz" target="_blank" rel="noopener" className="transition hover:text-paper">Discord ↗</a>
+            <a href="https://www.skool.com/the-agent-lab-3899/about" target="_blank" rel="noopener" className="transition hover:text-paper">AI Launchpad ↗</a>
             <a href="mailto:hi@datasense.in" className="transition hover:text-paper">Contact</a>
           </div>
 

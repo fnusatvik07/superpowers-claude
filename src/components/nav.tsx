@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { useEffect, useState, useCallback } from "react";
 import { motion, AnimatePresence, useScroll, useSpring } from "motion/react";
-import { Moon, Sun } from "lucide-react";
 
 const LINKS = [
   { href: "#how-it-works", label: "How it works" },
@@ -18,16 +17,6 @@ export function Nav() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("");
-  const [dark, setDark] = useState(false);
-
-  const toggleDark = useCallback(() => {
-    setDark((d) => {
-      const next = !d;
-      document.documentElement.classList.toggle("dark", next);
-      return next;
-    });
-  }, []);
-
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, { stiffness: 200, damping: 30 });
 
@@ -117,15 +106,6 @@ export function Nav() {
               </Link>
             </li>
           ))}
-          <li>
-            <button
-              onClick={toggleDark}
-              className="flex size-8 items-center justify-center rounded-lg border border-ink/20 text-foreground/60 transition hover:bg-muted hover:text-foreground"
-              aria-label="Toggle dark mode"
-            >
-              {dark ? <Sun className="size-4" /> : <Moon className="size-4" />}
-            </button>
-          </li>
           <li>
             <Link
               href="https://github.com/obra/superpowers"
@@ -220,13 +200,6 @@ export function Nav() {
                 >
                   GitHub ↗
                 </Link>
-                <button
-                  onClick={toggleDark}
-                  className="flex size-10 items-center justify-center rounded-xl border-2 border-ink/20 text-foreground/60"
-                  aria-label="Toggle dark mode"
-                >
-                  {dark ? <Sun className="size-5" /> : <Moon className="size-5" />}
-                </button>
               </motion.li>
             </ul>
           </motion.div>

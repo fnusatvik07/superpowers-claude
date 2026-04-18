@@ -26,7 +26,7 @@ const LINKS = [
   {
     group: "Community",
     items: [
-      { label: "Superpowers Discord", href: "https://discord.gg/35wsABTejz" },
+      { label: "AI Launchpad (Skool)", href: "https://www.skool.com/the-agent-lab-3899/about" },
       { label: "Prime Radiant newsletter", href: "https://primeradiant.com/superpowers/" },
     ],
   },
